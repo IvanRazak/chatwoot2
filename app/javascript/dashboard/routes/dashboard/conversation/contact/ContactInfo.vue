@@ -5,7 +5,7 @@
         <thumbnail
           v-if="showAvatar"
           :src="contact.thumbnail"
-          size="56px"
+          size="84px"
           :username="contact.name"
           :status="contact.availability_status"
         />
@@ -62,14 +62,6 @@
             icon="mail"
             emoji="✉️"
             :title="$t('CONTACT_PANEL.EMAIL_ADDRESS')"
-            show-copy
-          />
-          <contact-info-row
-            :href="contact.phone_number ? `tel:${contact.phone_number}` : ''"
-            :value="contact.phone_number"
-            icon="call"
-            emoji="📞"
-            :title="$t('CONTACT_PANEL.PHONE_NUMBER')"
             show-copy
           />
           <contact-info-row
